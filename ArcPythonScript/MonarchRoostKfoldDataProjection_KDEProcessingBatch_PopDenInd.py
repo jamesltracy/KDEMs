@@ -13,7 +13,7 @@ arcpy.env.overwriteOutput = True
 
 ################################################  
 # set working directory
-arcpy.env.workspace = "G:/MonarchRoost"
+arcpy.env.workspace = "G:/KDEM-master/KDEMVignetteData"
 
 # read arcmap datasets into memory
 list = arcpy.ListDatasets("*")
@@ -21,7 +21,7 @@ list.sort()
 print list
 
 # Set input and output directories
-InDirect = "G:/MonarchRoost"
+InDirect = "G:/KDEM-master/KDEMVignetteData"
 Species = "MonRst"
 OutDirect = InDirect + "/" + Species + "Spat10kMask"
 
