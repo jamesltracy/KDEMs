@@ -14,7 +14,7 @@ arcpy.env.overwriteOutput = True
 
 ################################################  
 # set working directory
-arcpy.env.workspace = "G:/MonarchRoost"
+arcpy.env.workspace = "G:/KDEM-master/KDEMVignetteData"
 
 # read arcmap datasets into memory
 list = arcpy.ListDatasets("*")
@@ -22,8 +22,8 @@ list.sort()
 print list
 
 # Set input and output directories
-InDirect = "G:/MonarchRoost"
-OutDirect = "G:/MonarchRoost"
+InDirect = "G:/KDEM-master/KDEMVignetteData"
+OutDirect = "G:/KDEM-master/KDEMVignetteData"
 
 # Project shapefile from WGS84 to North America Equal Area Albers
 arcpy.Project_management(in_dataset=InDirect + "/MonarchRoosts_2002_2016East.shp", out_dataset=OutDirect + "/MonarchRoosts_2002_2016EastAlbers.shp",
