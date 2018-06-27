@@ -67,6 +67,6 @@ arcpy.RasterToPoint_conversion(in_raster=Raster(OutDirect + "/rstden10kall"),
                                raster_field="Value")
 
 # Calculate kernel density raster using shapefile with values 1 to 10 weighted for human population
-arcpy.gp.KernelDensity_sa("rstdenpopall", "GRID_CODE",
-                          OutDirect + "/rstdnpallkd",
-                          "9552.93165844373", "", "SQUARE_KILOMETERS", "EXPECTED_COUNTS", "GEODESIC")
+#arcpy.gp.KernelDensity_sa("rstdenpopall", "GRID_CODE",
+#                          OutDirect + "/rstdnpallkd",
+#                          "9552.93165844373", "", "SQUARE_KILOMETERS", "EXPECTED_COUNTS", "GEODESIC")
