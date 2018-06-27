@@ -14,7 +14,7 @@ import os
 ###########################################################################################
 # Set names of working directory, species shapefile, evaluation area shapefile, numbers of desired pseudoabasence
 # and background points, and various buffer sizes
-OutDirect = "G:/MonarchRoost/" # Name of working and output directory
+OutDirect = "G:/KDEM-master/KDEMVignetteData" # Name of working and output directory
 SpecName= "MonRst"
 SpecFileName = "rstdenpopall"  # Name of species point shapefile (not thinned)
 PseudoabsenceBuffDist = "100" # In Kilometers. Pseudoabsence buffer distance from Presence points.
