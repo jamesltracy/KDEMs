@@ -6,21 +6,14 @@
 #
 # Tracy JL, Kantola T, Baum KA, Coulson RN in prep.) Modeling fall migration
 #   pathways and spatially identifying potential migratory hazards for the
-#   eastern monarch butterfly
+#   eastern monarch butterfly. Submitted to Landscape Ecology
 #
 # The program specifically processes species occurrence data (such as for
 # migratory movement) to generate, calibrate and evaluate spatially interpolative KDEMs
 ##############################################################################
 #
 ##################################################################################
-# NOTE: Some sections are commented since pre-processed presence, pseudoabsence,
-# and background data is provided in the KDEMVignetteData folder
-# In addition, several k-fold partition schemes are commented since they are also provided
-# in KDEMVignetteData folder
-# Modify the three input directories to match where you put input files on your system
-# 1) For R Functions: C:/Users/James/Documents/R/win-library/
-# 2) For csv files with occurrence data and k-fold partition schemes
-#    G:/MonarchRoost
+# NOTE: Data are provided in the KDEMVignetteData folder
 #################################################################################
 #
 ##############################################################################
@@ -372,7 +365,7 @@ for(Year in YearL) {
 
 
 ############################################################################
-### Process above kfold training data with "MonarchRoostKfoldDataProjection_KDEProcessingBatchPopDenInd.py"
+### Process above kfold training data with "MonarchRoostKfoldDataProjection_KDEProcessingBatch_PopDenInd.py"
 ### to create three training KDEs
 #### NOTE  Default bandwidth was 234,698 m for "PROJRSTKDE1BW" (8/2/17)
 ###################################################################################
