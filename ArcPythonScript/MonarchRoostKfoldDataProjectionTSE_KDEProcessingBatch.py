@@ -32,16 +32,16 @@ LoopCountList = range(0,3)
 
 for Year in YearL:
     #Year=2005
-    KDERasterL = range(0,3) # Create list for KDE rasters 
+    KDEMRasterL = range(0,3) # Create list for KDE rasters 
     for LoopCount in LoopCountList:
         #LoopCount = 0
         InDirect = InDirectPre + "KDEMProj_" + str(Year) + "_TrainSet" + NObskfoldgrppL[LoopCount] + "_ThresholdCalib" + str(LoopCount + 1) + NObskfoldgrppL[LoopCount] + "/"
         # Read in calibrated Raster
-        KDERasterL[LoopCount] = Raster(InDirect + "MonRstKDEM_" + str(LoopCount + 1) + "ThreshCal_TrainSet" + NObskfoldgrppL[LoopCount] + "Cal.tif")
+        KDEMRasterL[LoopCount] = Raster(InDirect + "MonRstKDEM_" + str(LoopCount + 1) + "ThreshCal_TrainSet" + NObskfoldgrppL[LoopCount] + "Cal.tif")
     # Sum raster in list
-    KDERasterSumTSE = sum(KDERasterL)
+    KDEMRasterSumTSE = sum(KDEMRasterL)
     # Find minimum consensus of raster sum
-    KDERasterConTSE = Con(KDERasterSumTSE >= 1,1,0)
+    KDEMRasterConTSE = Con(KDEMRasterSumTSE >= 1,1,0)
     # Save raster
-    KDERasterConTSE.save(OutDirect + "KDE" + str(Year) + "TSEMN")
+    KDEMRasterConTSE.save(OutDirect + "KDEM" + str(Year) + "TSEMN")
 
