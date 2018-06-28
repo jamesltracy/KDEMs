@@ -13,7 +13,7 @@ arcpy.env.overwriteOutput = True
 
 ################################################  
 # set working directory
-arcpy.env.workspace = "G:/MonarchRoost"
+arcpy.env.workspace = "G:/KDEM-master/KDEMVignetteData"
 
 # read arcmap datasets into memory
 list = arcpy.ListDatasets("*")
@@ -21,8 +21,8 @@ list.sort()
 print list
 
 # Set input and output directories
-InDirectPre = "G:/MonarchRoost/MonRstKDEMCNAA/" 
-OutDirect = "G:/MonarchRoost/"
+InDirectPre = "G:/KDEM-master/KDEMVignetteData/MonRstKDEMCNAA/" 
+OutDirect = "G:/KDEM-master/KDEMVignetteData/"
 
 NObskfoldgrppL = ['A', 'B', 'C']
 #YearL = range(2005,2017,1)
