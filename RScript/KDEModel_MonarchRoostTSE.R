@@ -21,7 +21,7 @@
 # file locations and output file naming conventions
 ##############################################################################
 # Specify  directory for saved functions
-FunctDirect <- "C:/Users/James/Documents/R/win-library/"
+FunctDirect <- "G:/KDEMS-master/RScript/"
 setwd(FunctDirect)
 # Read in User Defined Functions
 source("SpatialFilter_Function.R")
@@ -53,7 +53,7 @@ library(plyr)
 #crs.geo <- CRS("+init=epsg:26912")  # geographical, datum NAD83 12N
 
 # Specify  directory for general data and shapefiles
-InDirect <- "G:/MonarchRoost"
+InDirect <- "G:/KDEMS-master/KDEMVignetteData"
 setwd(InDirect)
 ## Specify extent and various descriptors for maxent run
 Extent <- "CNA"
@@ -245,7 +245,7 @@ library(dismo)
 ### NOTE: Only create NObs kfold groups once
 NObskfoldgrpp <- kfold(PresThin.df, NObsJ)
 #########
-## For the three sets of training NObskfoldgrpp sets above, convert kfold presence training data of “rstdenpopall.shp” to
+## For the three sets of training NObskfoldgrpp sets above, convert kfold presence training data of Â“rstdenpopall.shpÂ” to
 ## shapefiles below and process with python "MonarchRoostKFoldDataProcessingBatch.py" to create
 ## kernel density estimate surfaces of chosen bandwidth for the training data
 ##
