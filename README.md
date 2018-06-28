@@ -1,4 +1,4 @@
 # KDEMs
-R code and Arc python code for generating and analyzing kernel density estimation models (KDEMs)
+R code and Arc python code for generating and analyzing kernel density estimation models (KDEMs) for spatial interpolation of species occurrence data, such as in migration. 
 
 See the Word Document KDEMVignetteInstructions.docx for steps to use various ArcPython with ArcGIS and R scripts with provided example data.
