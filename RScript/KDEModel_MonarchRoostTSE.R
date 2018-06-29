@@ -529,24 +529,24 @@ write.table(KDEMKeepEvalStatsAll.dfs, file=paste0(Species, "BW", BandwidthType, 
 ################################################################################
 ### Use python scripts listed below to get data on displacement of annual centroids
 ### of KDEs between 27N and 37N in comparison to Training Subset Ensemble centroid of all years
-### Also obtain average width in km of this area of KDEs
-###  MonarchRoostYearlyKfoldDataProjectionAllYearTSE_KDECentroid.py
-###  MonarchRoostYearlyKfoldDataProjectionTSE_KDECentroidPathProcessingBatch.py
+### Also obtain average width in km of this area of KDEMs
+###  MonarchRoostYearlyKfoldDataProjectionAllYearTSE_KDEMCentroidNorth.py
+###  MonarchRoostYearlyKfoldDataProjectionTSE_KDEMCentroidPathAreaNorthProcessingBatch.py
 ################################################################################
 ##
 ## Read in output from above python code
-KDEDirect <- "G:/MonarchRoost/MonRstYearlyKDE"
-setwd(KDEDirect)
+KDEMDirect <- "G:/KDEM-master/KDEMVignetteData"
+setwd(KDEMDirect)
 #
-KDEDimensions.df <- data.frame(read.csv("KDEWidth_CentroidShift_Distances.csv"), stringsAsFactors=FALSE)
+KDEMDimensions.df <- data.frame(read.csv("KDEMWidth_CentroidShift_AreaDistancesNorth.csv"), stringsAsFactors=FALSE)
 
-## Read back in KDE stats data
+## Read back in KDEM stats data
 setwd(OutDirectpsa)
 #
 ###Calculate Mean and Standard Deviation Values
-EvaluationStats <- KDEDimensions.df
-OutName <- paste0(Species, "_AnnualKDEDimensionsSummary.csv")
-SortGroups <- c("KDEYEAR")
+EvaluationStats <- KDEMDimensions.df
+OutName <- paste0(Species, "_AnnualKDEMDimensionsSummary.csv")
+SortGroups <- c("KDEMYEAR")
 ## All statistics, and only statistics, should be at and after the column specified below
 StatVarFirstColumn <- 3
 OutDirectIn <- OutDirectpsa
@@ -555,7 +555,7 @@ head(EvaluationStatsSummary.df)
 ##
 EvalStatsOut <- EvaluationStatsSummary.df
 #
-write.table(EvalStatsOut, file=paste0(Species, "_AnnualKDEDimensionsSummaryTable.csv"), sep=",", col.names=NA)
+write.table(EvalStatsOut, file=paste0(Species, "_AnnualKDEMDimensionsSummaryTable.csv"), sep=",", col.names=NA)
 ##
 
 
