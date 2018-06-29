@@ -30,7 +30,7 @@ arcpy.env.overwriteOutput = True
 
 ################################################  
 # set working directory
-arcpy.env.workspace = "G:/MonarchRoost"
+arcpy.env.workspace = "G:/KDEM-master/KDEMVignetteData"
 
 # read arcmap datasets into memory
 list = arcpy.ListDatasets("*")
@@ -38,8 +38,8 @@ list.sort()
 print list
 
 # Set input and output directories
-InDirectPre = "G:/MonarchRoost/"
-OutDirect = "G:/MonarchRoost/"
+InDirectPre = "G:/KDEM-master/KDEMVignetteData"
+OutDirect = "G:/KDEM-master/KDEMVignetteData"
 
 # Read in calibrated Raster
 KDEMRaster = Raster(OutDirect + "kdem02_16tse")
