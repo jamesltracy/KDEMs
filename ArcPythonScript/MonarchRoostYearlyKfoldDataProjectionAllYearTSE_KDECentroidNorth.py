@@ -38,8 +38,8 @@ list.sort()
 print list
 
 # Set input and output directories
-InDirectPre = "G:/KDEM-master/KDEMVignetteData"
-OutDirect = "G:/KDEM-master/KDEMVignetteData"
+InDirectPre = "G:/KDEM-master/KDEMVignetteData/"
+OutDirect = "G:/KDEM-master/KDEMVignetteData/"
 
 # Read in calibrated Raster
 KDEMRaster = Raster(OutDirect + "kdem02_16tse")
