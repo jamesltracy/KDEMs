@@ -1,4 +1,4 @@
-## This code assembles three monarch roost Training KDEM models for each year and obtains the centroid and average eastern and western longitudes
+## This code assembles three monarch roost Training KDE models (KDEMs) for each year and obtains the centroid and average eastern and western longitudes
 ## for the 27 to 37N portion of the central flyway, calculating the average width of the KDEM and the north-south and east-west distances
 ## of the training KDEM centroids to the training subset ensemble centroid using data from all years. Data are collected in a csv file.
 ## NOTE: The geoprocessing environment must have the output coordinates, processing extent, snap raster and cell size set to match the human
