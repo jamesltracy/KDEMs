@@ -1,4 +1,4 @@
-## This code assembles three calibrated Training KDE models for each year and creates a minimum consensus Training Subset Ensemble TSE) model
+## This code assembles three calibrated Training KDE models (KDEMs) for each year and creates a minimum consensus Training Subset Ensemble TSE) model
 ## NOTE: The geoprocessing environment must have the output coordinates, processing extent, snap raster and cell size set to match the human
 ## population density raster "pop10kmn3"
 
